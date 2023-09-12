@@ -4,5 +4,9 @@
     <string name="nombre">Nombre: </string>
     <string name="cedula">Cedula: </string>
     <string name="fecha_nacimiento">Fecha de Nacimiento: </string>
-    <string name="vote">Vote</string>
+    <string name="vote">VOTE</string>
+    <string name="botonA">A</string>
+    <string name="botonB">B</string>
+    <string name="botonC">C</string>
+    <string name="Copy">Copyright 2023</string>
 </resources>

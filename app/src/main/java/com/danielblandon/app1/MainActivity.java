@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
         Intent enviarDatos = new Intent(MainActivity.this,ResultadosActivity.class);
 
         botonA.setOnClickListener(new View.OnClickListener() {

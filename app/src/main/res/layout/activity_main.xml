@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/color5"
 
     >
 
@@ -17,7 +18,7 @@
 
 
         <TextView
-
+            android:textColor="@color/color6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/Modulo_votacion"
@@ -36,7 +37,7 @@
         android:orientation="horizontal">
 
         <TextView
-
+            android:textColor="@color/color6"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -60,7 +61,7 @@
         android:orientation="horizontal">
 
         <TextView
-
+            android:textColor="@color/color6"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -85,7 +86,7 @@
         android:orientation="horizontal">
 
         <TextView
-
+            android:textColor="@color/color6"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
@@ -94,7 +95,7 @@
         <EditText
             android:id="@+id/fecha_nacimiento"
             android:layout_width="0dp"
-            android:layout_weight="4"
+            android:layout_weight="6"
             android:layout_height="wrap_content"
             android:imeOptions="actionNext"
             android:inputType="text"/>
@@ -103,35 +104,42 @@
     <LinearLayout
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
+        android:layout_margin="10dp"
         android:layout_marginBottom="20dp"
         android:gravity="center"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="0.5">
 
         <TextView
-
+            android:textColor="@color/color6"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="80dp"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="@string/vote"/>
+            android:text="@string/vote"
+            android:textSize="25sp"/>
 
 
         <Button
+
+            android:text="@string/botonA"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/A">
+            android:id="@+id/A"
+           >
 
         </Button>
         <Button
+            android:text="@string/botonB"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/B">
 
         </Button>
         <Button
+            android:text="@string/botonC"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/C">
