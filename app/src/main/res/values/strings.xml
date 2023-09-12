@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">app1</string>
+    <string name="Modulo_votacion">Modulo de Votación</string>
+    <string name="nombre">Nombre: </string>
+    <string name="cedula">Cedula: </string>
+    <string name="fecha_nacimiento">Fecha de Nacimiento: </string>
+    <string name="vote">Vote</string>
+</resources>
