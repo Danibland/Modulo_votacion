@@ -97,7 +97,7 @@
             android:layout_width="0dp"
             android:layout_weight="6"
             android:layout_height="wrap_content"
-            android:imeOptions="actionNext"
+            android:imeOptions="actionGo"
             android:inputType="text"/>
     </LinearLayout>
 
@@ -123,28 +123,23 @@
 
 
         <Button
-
-            android:text="@string/botonA"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:id="@+id/A"
-           >
-
-        </Button>
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/botonA"
+            android:onClick="clearEditText" />
         <Button
+            android:id="@+id/B"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="@string/botonB"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/B">
-
-        </Button>
+            android:onClick="clearEditText" />
         <Button
-            android:text="@string/botonC"
+            android:id="@+id/C"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/C">
-
-        </Button>
+            android:text="@string/botonC"
+            android:onClick="clearEditText" />
 
 
 

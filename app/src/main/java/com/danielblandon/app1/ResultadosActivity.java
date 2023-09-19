@@ -9,31 +9,31 @@ import android.widget.TextView;
 public class ResultadosActivity extends AppCompatActivity {
 
 
-    TextView textViewFechaNacimiento;
-    TextView textViewCedula;
-    TextView textViewNombre;
-    TextView textViewBoton;
+    TextView textViewFechaNacimiento,textViewCedula,textViewNombre,textViewBoton;
+    String fechaNacimiento,cedula,nombre, boton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resultados);
+
+        Intent recibirDatos = getIntent();
 
         textViewFechaNacimiento = findViewById(R.id.textViewFechaNacimiento);
         textViewCedula = findViewById(R.id.textViewCedula);
         textViewNombre = findViewById(R.id.textViewNombre);
         textViewBoton = findViewById(R.id.textViewBoton);
 
-        Intent intent = getIntent();
 
-        String fechaNacimiento = intent.getStringExtra("fecha_nacimiento");
-        String cedula = intent.getStringExtra("cedula");
-        String nombre = intent.getStringExtra("nombre");
-        String boton = intent.getStringExtra("boton");
 
-        textViewNombre.setText("Nombre: "+ nombre);
-        textViewCedula.setText("Cedula: "+ cedula);
-        textViewFechaNacimiento.setText("Fecha de Nacimiento: "+fechaNacimiento);
-        textViewBoton.setText("El voto fue por: "+ boton);
+        fechaNacimiento = recibirDatos.getStringExtra("fecha_nacimiento");
+        cedula = recibirDatos.getStringExtra("cedula");
+        nombre = recibirDatos.getStringExtra("nombre");
+        boton = recibirDatos.getStringExtra("boton");
+
+        textViewNombre.setText(nombre);
+        textViewCedula.setText(cedula);
+        textViewFechaNacimiento.setText(fechaNacimiento);
+        textViewBoton.setText(boton);
 
     }
 }

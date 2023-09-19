@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
         Intent enviarDatos = new Intent(MainActivity.this,ResultadosActivity.class);
 
+
         botonA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -51,6 +52,8 @@ public class MainActivity extends AppCompatActivity {
                 enviarDatos.putExtra("nombre",nom);
                 enviarDatos.putExtra("boton","A");
                 startActivity(enviarDatos);
+
+
             }
         });
 
@@ -83,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
                 enviarDatos.putExtra("nombre",nom);
                 enviarDatos.putExtra("boton","C");
                 startActivity(enviarDatos);
+
             }
         });
 
@@ -90,4 +94,5 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
 }

@@ -8,5 +8,6 @@
     <string name="botonA">A</string>
     <string name="botonB">B</string>
     <string name="botonC">C</string>
+    <string name="votopor">Voto por: </string>
     <string name="Copy">Copyright 2023</string>
 </resources>
